@@ -1,11 +1,97 @@
-/*Раздел Наши туры*/
+
 body{
     margin: 0px;
 }
 
+/*Блок логотипа */
+.logo{
+    position: relative;
+
+}
+/*Текст логотипа */
+.logotext{
+    position: relative;
+
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #36424F;
+    width: 100%;
+    padding-left: 70px;
+}
+/*Изображение логотипа*/
+.logoimage{
+    position: relative;
+    border-radius: 32px;
+    float: left;
+}
+/*Картинка времени работы*/
+.clock{
+    position: relative;
+    float: left;
+}
+/*Текст времени работы*/
+.clocktext{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+/*Блок меню*/
+.menu{
+    background: #03499E;
+
+}
+
+.samtc{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.but{
+    cursor: pointer;
+    background: #FFDA50;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 170px;
+
+}
+.but:hover{
+    box-shadow: 0px 5px 15px rgba(0, 5, 65, 0.1);
+}
+.but:active{
+    background: #FFC900;
+}
+.Buttext{
+    display: inline-block;
+    padding-top: 10%;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin:2%;
+}
+.menutext{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+}
+
+
+/*Раздел Наши туры*/
 .OurTours{
     width: 100%;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 }
 .HeadingOurTours{
     margin-top: 100px;
@@ -37,7 +123,8 @@ body{
 }
 
 .OurToursSwiper{
-
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 50px;
 }
 .swiper-container {
