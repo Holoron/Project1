@@ -60,7 +60,7 @@
 
 .swiper-container-free-mode > .swiper-wrapper {
     transition-timing-function: ease-out;
-    margin: 0 auto
+    margin: 0 0;
 }
 
 .swiper-slide {
