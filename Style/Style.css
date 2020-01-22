@@ -124,6 +124,7 @@ body{
     padding-bottom: 8px;
 }
 
+/*Слайдер Наши туры*/
 .OurToursSwiper{
     padding-left: 0px;
     padding-right: 0px;
@@ -144,8 +145,6 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-
-
 .swiper-slide {
     border-radius: 5px;
     background: #fefefe ;
@@ -163,8 +162,6 @@ body{
     align-items: center;
     z-index:1;
 }
-
-
 .swiper-slide h3,.swiper-slide span{
     font-family: Rubik;
     font-style: normal;
@@ -184,13 +181,10 @@ body{
     line-height: 22px;
     color: #36424F;
 }
-
 .swiper-slide:hover{
     box-shadow: 0px 5px 15px rgba(0, 5, 65, 0.1);
     z-index: 22;
 }
-
-
 .active{
     background: #129FDF;
     opacity: 0.99;
@@ -201,3 +195,21 @@ body{
 .swiper-slide.active h3, .swiper-slide.active span  {
     color: white;
 }
+
+.ViewOurTurs{
+    max-width: 370px;
+    width: 370px;
+    height: 270px;
+    -o-background-size: 10px;
+    background: linear-gradient(to top, #002D64 0%, rgba(0, 45, 100, 0) 50%), linear-gradient(to bottom, #002D64 0%, rgba(0, 45, 100, 0) 26%), url(../Img/TuorsImg/1.png) no-repeat, no-repeat, no-repeat center, center, center;
+    border-radius: 5px;
+    margin: 40px 15px 0 15px ;
+}
+/*.TopViewOurTurs{*/
+    /*background: linear-gradient(270deg, #002D64 0%, rgba(0, 45, 100, 0) 100%);*/
+    /*opacity: 0.9;*/
+    /*width: 70px;*/
+    /*height: 100%;*/
+    /*border-radius: 0px 5px 5px 0px;*/
+    /*transform: rotate(-90deg);*/
+/*}*/
