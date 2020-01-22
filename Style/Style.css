@@ -1,15 +1,16 @@
-
-body{
-    margin: 0px;
+body
+{
+    background: #E5E5E5;
 }
-
 /*Блок логотипа */
-.logo{
+.logo
+{
     position: relative;
-
+    max-width: 300px;
 }
 /*Текст логотипа */
-.logotext{
+.logotext
+{
     position: relative;
 
 
@@ -20,21 +21,24 @@ body{
     line-height: 20px;
     color: #36424F;
     width: 100%;
-    padding-left: 70px;
+
 }
 /*Изображение логотипа*/
-.logoimage{
+.logoimage
+{
     position: relative;
     border-radius: 32px;
     float: left;
 }
 /*Картинка времени работы*/
-.clock{
+.clock
+{
     position: relative;
     float: left;
 }
 /*Текст времени работы*/
-.clocktext{
+.clocktext
+{
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -42,19 +46,28 @@ body{
     line-height: 26px;
 }
 /*Блок меню*/
-.menu{
+.menu
+{
     background: #03499E;
-
+    text-align: center;
+    margin-bottom: 1%;
 }
-
-.samtc{
+div[name="menu"]
+{
+    padding: 1% 0 1% 0;
+}
+/*Текст блоков шапки*/
+.samtc
+{
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
 }
-.but{
+/* Блок кнопки*/
+.but
+{
     cursor: pointer;
     background: #FFDA50;
     border-radius: 5px;
@@ -62,13 +75,17 @@ body{
     max-width: 170px;
 
 }
-.but:hover{
+.but:hover
+{
     box-shadow: 0px 5px 15px rgba(0, 5, 65, 0.1);
 }
-.but:active{
+.but:active
+{
     background: #FFC900;
 }
-.Buttext{
+/*Текст кнопки*/
+.Buttext
+{
     display: inline-block;
     padding-top: 10%;
     font-family: Rubik;
@@ -76,9 +93,12 @@ body{
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
-    margin:2%;
+
 }
-.menutext{
+/*Текст меню*/
+.menutext
+{
+
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
@@ -86,97 +106,88 @@ body{
     line-height: 28px;
     color: white;
 }
-
-
-/*Раздел Наши туры*/
-.OurTours{
+.coll-1
+{
+    position: relative;
     width: 100%;
-    background-color: #f7f7f7;
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%
 }
-.HeadingOurTours{
-    margin-top: 100px;
+.coll-1:first-child
+{
+    padding-right: 15px ;
 }
-.HeadingOurTours H3{
+.coll-2
+{
+    position: relative;
+    width: 100%;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%
+}
+.find
+{
+    cursor: pointer;
+    padding-top: 1%;
+    text-align: center;
+    background: #129FDF;
+    border-radius: 5px;
+}
+.find span
+{
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #36424F;
-}
-.HeadingOurTours H2{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 50px;
-    color: #03499E;
-    margin-bottom: 0px;
-}
-.HeadingOurToursNavigation{
-    align-self: flex-end;
-    text-align-last: end;
-}
-.HeadingOurToursNavigation img  {
-    padding-left: 40px;
-    padding-bottom: 8px;
-}
-
-.OurToursSwiper{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 50px;
-}
-.swiper-container {
-    /*padding-top: 50px;*/
-
-    width: 100%;
-    height: 130px;
-}
-.FirstSlide{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto
-}
-.swiper-slide {
-    border-radius: 5px;
-    background: #fefefe ;
-    max-height: 130px;
-    max-width: 265px;
-    text-align: center;
     font-size: 18px;
-
-    /* Center slide text vertically */
-    /*display: -webkit-box;*/
-    /*display: -ms-flexbox;*/
-    /*display: -webkit-flex;*/
-    /*display: flex;*/
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
 }
-.swiper-slide H3{
-    word-break: break-word;
+.find:hover
+{
+    box-shadow: 0px 5px 15px rgba(0, 5, 65, 0.1);
+}
+.find:active
+{
+    background: #0084BF;
+}
+
+.filter
+{
+    min-height: 60px;
+}
+.inp
+{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+.inp::-webkit-input-placeholder
+{
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
-    color: #129FDF;
+    color: #36424F;
+    vertical-align: bottom;
 }
-.swiper-slide H4{
-    white-space: pre-wrap;
+.label
+{
+    position: absolute;
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    color: #36424F;
+    font-size: 12px;
+    color: #B5BDCA;
+    line-height: 20px;
+}
+.label:nth-child(1)
+{
+    top: 5%;
+}
+.label:nth-child(2)
+{
+
 }
