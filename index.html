@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-    <div class="container" style="margin-bottom: 2%;margin-top: 2%">
+    <div class="container">
         <div class="row ">
             <div class="logo col-3">
                 <div class="logoimage">
@@ -73,11 +73,11 @@
 <main>
     <!--Наши туры-->
     <div class="OurTours">
-        <div class="container " id="Main">
+        <div class="container " id="OurTours">
             <div class="row">
                 <div class="col HeadingOurTours">
-                        <h3 class="">Лучшее преложение</h3>
-                        <h2>Наши туры</h2>
+                    <span class="">Лучшее преложение</span>
+                    <span>Наши туры</span>
                 </div>
                 <div class="col HeadingOurToursNavigation">
                     <img src="Img/navigation/PointerLeft.svg" alt="">
@@ -88,21 +88,34 @@
         <div class="container-fluid OurToursSwiper">
             <!-- Swiper -->
             <div class="swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" id="OurToursSwiper">
+                    <div class="swiper-slide ">
+                        <h3>По России</h3>
+                        <span>Москва, Петербург, Золотое Кольцо, Черное море, Сочи</span>
+                    </div>
+                    <div class="swiper-slide active ">
+                        <h3>Пляжные туры</h3>
+                        <span>Зарубежные туры с вылетом из Самары</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Экскурсионные туры</h3>
+                        <span>Зарубежные туры с вылетом из Самары</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Автобусные, ж/д и авиа туры</h3>
+                        <span>Зарубежные туры из Москвы</span>
+                    </div>
                     <div class="swiper-slide">
                         <h3>По России</h3>
-                        <h4>Москва, Петербург, Золотое Кольцо, Черное море, Сочи</h4>
+                        <span>Москва Петербург Золотое Кольцо Черное море Сочи</span>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+
                 </div>
+            </div>
+        </div>
+        <div class="container pt-5">
+            <div class="row">
+                <div></div>
             </div>
         </div>
     </div>
