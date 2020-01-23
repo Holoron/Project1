@@ -422,18 +422,12 @@ div[name="menu"]{
     color: #FFFFFF;
 }
 
-.swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1
-}
-
 /*HotSeason*/
+.TabHotSeason>.row>.ViewOurTurs{
+    background: url(../Img/TuorsImg/HotSeason/1.png)
 
+
+}
 
 /*.TabHotSeason>.row{*/
 /*    max-height: 276px;*/
