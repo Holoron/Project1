@@ -12,17 +12,18 @@
 </head>
 <body>
 <header>
-    <div class="container-fluid row justify-content-center" style="margin:2%;padding-left:0;padding-right: 0">
+    <div class="container row justify-content-between" style="margin:0% 5% 1.3% 12%; padding-top: 0.5%">
 
-        <div class="logo col-3" >
+        <div class="logo col-4" style="bottom: 5px;left: 1px">
             <div class="logoimage">
                 <img src="Img/Header/logo.png">
             </div>
             <div class="logotext">
-                <span> СамараТур 19 лет с вами!<br> Проверено временем </span>
+                <span style="display: block; padding-top: 10px;padding-left: 5px"> СамараТур 19 лет с вами!<br> Проверено временем </span>
             </div>
         </div>
-        <div class="col-4" style="max-width: 200px" >
+
+        <div class="col-3" style="max-width: 200px;margin-top: 13px;left:15px ">
             <div class=" clock ">
                 <img src="Img/Header/Clock.svg">
             </div>
@@ -30,46 +31,46 @@
                 <span class="clocktext">Пн-Пт 10:00-18:00</span>
             </div>
         </div>
-        <div class="col-2">
-            <span class="samtc"> Самара ТЦ «Захар»:<br> <b>(846) 277-70-24</b></span>
+        <div class="col-2" style="padding-right: 0px">
+            <span class="samtc" style="display: block;padding-left: 15px"> Самара ТЦ «Захар»:<br> <a class="tel" href="(846) 277-70-24"><b>(846) 277-70-24</b></a></span>
         </div>
         <div class="col-2">
-            <span class="samtc">Тольятти:<br> <b>8-800-100-25-94</b></span>
+            <span class="samtc">Тольятти:<br> <a class="tel" href="8-800-100-25-94"><b>8-800-100-25-94</b></a></span>
         </div>
-        <div class="col-2 but" >
-            <span  class="Buttext">Подбор тура<img src="Img/Header/Wave.svg" style="float: right;padding-left: 5px;padding-top: 5px"></span>
+        <div class="col-2 but"  style="max-height: 48px;left: 15px">
+            <span  class="Buttext">Подбор&nbspтура<img src="Img/Header/Wave.svg" style="float: right;padding-left: 5px;padding-top: 5px"></span>
         </div>
 
     </div>
-    <div class="container-fluid menu row" >
-
-        <div class="col-1" name="menu">
-            <span class="menutext" style="float: right"> Авиатуры</span>
+    <div class="container-fluid menu"  style="min-height: 60px" >
+        <div class="container  row justify-content-between" style="margin: 0 12% 0 12%">
+            <div class="col-1 menuitem" name="menu">
+                <span class="menutext" > Авиатуры</span>
+            </div>
+            <div class="col-1 menuitem" name="menu">
+                <span class="menutext">Круизы</span>
+            </div>
+            <div class="col-2 menuitem" name="menu">
+                <span class="menutext">Автотуры по Европе</span>
+            </div>
+            <div class="col-2 menuitem" name="menu">
+                <span class="menutext"> Автотуры по России</span>
+            </div>
+            <div class="col-2 menuitem" name="menu" style="text-align: start">
+                <span class="menutext"> ЖД и авиабилеты</span>
+            </div>
+            <div class="col-2 menuitem" name="menu" style="text-align: start;right: 20px">
+                <span class="menutext"> Турбазы и санатории</span><img src="Img/Header/ArrowDown.svg" style="float: right;padding-top: 5%">
+            </div>
+            <div class="col-1 menuitem" name="menu"  style="flex: 0 0 13%; max-width: 13%;text-align: start">
+                <span class="menutext" > Доп. услуги</span><img src="Img/Header/ArrowDown.svg" style="float: none;padding-top: 5%">
+            </div>
+            <div class="col-1" name="menu" style="flex: 0 0 1%; max-width: 1%">
+                <img src="Img/Header/Search.svg">
+            </div>
         </div>
-        <div class="col-1" name="menu">
-            <span class="menutext">Круизы</span>
-        </div>
-        <div class="col-2" name="menu">
-            <span class="menutext">Автотуры по Европе</span>
-        </div>
-        <div class="col-2" name="menu">
-            <span class="menutext"> Автотуры по России</span>
-        </div>
-        <div class="col-2" name="menu">
-            <span class="menutext"> ЖД и авиабилеты</span>
-        </div>
-        <div class="col-2" name="menu">
-            <span class="menutext"> Турбазы и санатории</span><img src="Img/Header/ArrowDown.svg" style="float: right">
-        </div>
-        <div class="col-1" name="menu">
-            <span class="menutext"> Доп. услуги</span>
-        </div>
-        <div class="col-1" name="menu">
-            <img src="Img/Header/Search.svg">
-        </div>
-
     </div>
-    <div class="container-fluid row filter " style="margin-bottom:1% ">
+    <div class="container row filter " style="margin:1% auto 0.5% auto; ">
         <div class="col-2">
             <span class="label"> Откуда</span>
             <input class="inp" placeholder="Самара">
@@ -90,31 +91,29 @@
             <span class="label"> Туристы</span>
             <input class="inp" placeholder="2-0-0">
         </div>
-        <div class="col-2 find">
+        <div class="col-2 find" style="min-width: 30px">
             <span>Найти</span>
         </div>
 
     </div>
-    <div class="container-fluid" style="text-align: center">
-        Slider
-    </div>
+
 </header>
 <main>
     <!--Наши туры-->
     <div class="OurTours">
-        <div class="container " id="OurTours">
+        <div class="container">
             <div class="row">
-                <div class="col HeadingOurTours">
-                    <span class="">Лучшее преложение</span>
+                <div class="col-3 no-gutters HeadingTitlePost">
+                    <span class="">Лучшие преложения</span>
                     <span>Наши туры</span>
                 </div>
-                <div class="col HeadingOurToursNavigation">
+                <div class="col-2 offset-xl-7 HeadingTitleNavigation">
                     <img src="Img/navigation/PointerLeft.svg" alt="">
                     <img src="Img/navigation/PointerRight.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="container-fluid OurToursSwiper">
+        <div class="container-fluid TabSwiper">
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper" id="OurToursSwiper">
@@ -142,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="height: 1000px">
+        <div class="container">
             <div class="row">
                 <div class="col ViewOurTurs">
                     <div>
@@ -160,7 +159,8 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
                 <div class="col ViewOurTurs">
@@ -169,11 +169,154 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <h3>Туры на остров Занзибар</h3>
+                        <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 OurBottom">
+                    <h3><span>9 из 12 </span> предложений</h3>
+                </div>
+                <div class="col-4 offset-xl-1 TourMore">
+                        <div class="row no-gutters TourButtonMore">
+                            <div class="col "><span>Загрузить еще</span> </div>
+                            <div class="col-1"><img src="Img/Other/WaweMore.svg" alt=""> </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Хиты сезона-->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 no-gutters HeadingTitlePost">
+                    <span class="">Лето-осень 2019-2020</span>
+                    <span>Хиты сезона</span>
+                </div>
+                <div class="col-2 offset-xl-7 HeadingTitleNavigation">
+                    <img src="Img/navigation/PointerLeft.svg" alt="">
+                    <img src="Img/navigation/PointerRight.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid TabHotSeason">
+            <!-- Swiper -->
+            <div class="swiper-container-HotSeason">
+                <div class="swiper-wrapper-HotSeason">
+                    <div class="swiper-slide-HotSeason ">
+                        <div class="ImgSwiperHotSeason"></div>
+<!--                        <img src="Img/TuorsImg/HotSeason/1.png" alt="">-->
+                        <a href="#">Пляжные туры</a>
+                        <span>Таиланд</span>
+                    </div>
+                    <div class="swiper-slide-HotSeason">
+                        <a href="#">Пляжные туры</a>
+                        <span>Таиланд</span>
+                    </div>
+                    <div class="swiper-slide-HotSeason">
+                        <a href="#">Пляжные туры</a>
+                        <span>Таиланд</span>
+                    </div>
+                    <div class="swiper-slide-HotSeason">
+                        <a href="#">Пляжные туры</a>
+                        <span>Таиланд</span>
+                    </div>
+                    <div class="swiper-slide-HotSeason">
+                        <a href="#">Пляжные туры</a>
+                        <span>Таиланд</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+<!--        <div class="container-fluid TabHotSeason">-->
+<!--            <div class="row no-gutters">-->
+<!--                <div class="col-4">-->
+<!--                    <img src="Img/TuorsImg/HotSeason/1.png" alt="">-->
+<!--                    <a href="#">Пляжные туры</a>-->
+<!--                    <span>Таиланд</span>-->
+<!--                </div>-->
+<!--                <div class="col-4">-->
+<!--                    <img src="Img/TuorsImg/HotSeason/1.png" alt="">-->
+<!--                    <a href="#">Пляжные туры</a>-->
+<!--                    <span>Таиланд</span>-->
+<!--                </div>-->
+<!--                <div class="col-4">-->
+<!--                    <img src="Img/TuorsImg/HotSeason/1.png" alt="">-->
+<!--                    <a href="#">Пляжные туры</a>-->
+<!--                    <span>Таиланд</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </main>
     <script src="Script/swiper.min.js"></script>
