@@ -12,6 +12,16 @@ span{
     font-family: Rubik;
 }
 
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
 body{
     margin: 0;
 
@@ -24,6 +34,13 @@ header
 .logo{
     position: relative;
     max-width: 300px;
+    bottom: 5px;
+    padding-left: 0;
+}
+.tophead
+{
+    margin:0% auto 1.3% auto;
+    padding-top: 0.5%;
 }
 /*Текст логотипа */
 .logotext{
@@ -37,6 +54,12 @@ header
     width: 100%;
 
 }
+.logsam
+{
+    display: block;
+    padding-top: 10px;
+    padding-left: 5px;
+}
 /*Изображение логотипа*/
 .logoimage{
     float: left;
@@ -44,6 +67,12 @@ header
     border-radius: 32px;
     padding-right: 10px;
     float: left;
+}
+.mainclock
+{
+    max-width: 200px;
+    margin-top: 13px;
+
 }
 /*Картинка времени работы*/
 .clock{
@@ -58,6 +87,10 @@ header
     font-size: 16px;
     line-height: 26px;
 }
+.headinfo
+{
+    padding-right: 0px;
+}
 /*Блок меню*/
 .menu{
     background: #03499E;
@@ -66,12 +99,17 @@ header
     margin-bottom: 1%;
     opacity: 0.99;
 }
-div[name="menu"]{
-    padding: 16px 0 0 0;
+.menuitem{
+
+    display: flex;
     min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
 }
+
 /*Текст блоков шапки*/
 .samtc{
+    display: block;
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
@@ -85,6 +123,7 @@ div[name="menu"]{
     border-radius: 5px;
     text-align: center;
     max-width: 170px;
+    max-height: 48px;
 
 }
 .but:hover{
@@ -92,6 +131,37 @@ div[name="menu"]{
 }
 .but:active{
     background: #FFC900;
+}
+.butimg
+{
+
+}
+
+.submenu
+{
+    overflow: visible;
+    display: none;
+}
+.submenu a
+{
+    color: black;
+}
+
+.list > li
+{
+
+    position: relative;
+}
+
+.list li:hover .submenu
+{
+    display: block;
+}
+.flex
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
 }
 /*Текст кнопки*/
 .Buttext{
@@ -104,6 +174,23 @@ div[name="menu"]{
     line-height: 22px;
 
 }
+.search
+{
+    width: 100%;
+    z-index: 99;
+    min-height: 60px;
+    display:none;
+}
+.searchfield
+{
+    float: right;
+    background: #FFFFFF;
+    opacity: 0.1;
+    border-radius: 5px;
+    min-height: 60px;
+    margin: 5px 0 5px 0;
+
+}
 /*Текст меню*/
 .menutext{
     font-family: Rubik;
@@ -112,6 +199,30 @@ div[name="menu"]{
     font-size: 16px;
     line-height: 28px;
     color: white;
+    min-height: 60px;
+    padding-top: 15px;
+}
+.submenu {
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 425px;
+    z-index: 99;
+    background: #F7F7F7;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.submenu li
+{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #36424F;
 }
 .coll-1{
     position: relative;
@@ -186,6 +297,10 @@ div[name="menu"]{
 {
 
 }
+.list
+{
+    width: 100%;
+}
 
 /*Ссылки на телефон*/
 .tel
@@ -197,6 +312,14 @@ div[name="menu"]{
 .menuitem:hover
 {
     background: #003576;
+}
+.menuitem:active, .menutext:active .menuitem
+{
+    background: #F7F7F7;
+}
+.menuitem:active .menutext, .menutext:active
+{
+    color: #129FDF;
 }
 
 
@@ -253,7 +376,7 @@ div[name="menu"]{
     /*padding-bottom: 3px;*/
 }
 
-.swiper-container:after,.swiper-container:before{
+.swiper-container:after,.swiper-container:before,.TabHotSeasonShadow:before,.TabHotSeasonShadow:after,.Recommendation:before,.Recommendation:after{
     content: "";
     position: absolute;
     height: 130px;
@@ -391,12 +514,10 @@ div[name="menu"]{
     height: 47px;
     background: #129FDF;
 }
-
 .TourMore{
     text-align: center;
     padding-top: 10px;
 }
-
 .TourButtonMore{
     height: 47px;
     cursor: pointer;
@@ -423,56 +544,117 @@ div[name="menu"]{
 }
 
 /*HotSeason*/
-.TabHotSeason>.row>.ViewOurTurs{
-    background: url(../Img/TuorsImg/HotSeason/1.png)
-
+.TabHotSeason{
+    padding-bottom: 29px;
+}
+.Recommendation{
+    padding-bottom: 99px;
+}
+.TabHotSeasonShadow:before,.Recommendation:before{
+    left: 0;
+    height: 305px;
+    background-image: linear-gradient(to left, rgba(247, 247, 247, 0) 0%, #FFFFFF 100%);
 
 }
+.TabHotSeasonShadow:after,.Recommendation:after{
+    right: 0;
+    height: 305px;
+    background-image: linear-gradient(to right, rgba(247, 247, 247, 0) 0%, #FFFFFF 100%);
+    transform: translateY(-305px);
+}
 
-/*.TabHotSeason>.row{*/
-/*    max-height: 276px;*/
-/*    max-width: 1170px;*/
-/*    width: 100%;*/
-/*    padding-right: 15px;*/
-/*    padding-left: 15px;*/
-/*    margin-right: auto;*/
-/*    margin-left: auto;*/
-/*    position: relative;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    z-index: 1;*/
-/*    display: flex;*/
-/*    transition-property: transform;*/
-/*    box-sizing: content-box;*/
-/*}*/
-/*.TabHotSeason>.row>.col-4{*/
-/*    margin: 0 15px 30px 15px;*/
-/*    !*max-height: 370px;*!*/
-/*    !*max-width: 276px;*!*/
-/*    !*margin-left: -15px;*!*/
-/*    !*margin-top: -10px;*!*/
-/*}*/
+.TabHotSeason>.col-4:last-child,.Recommendation>.col-4:last-child{
+    padding-right: 0;
+}
+.TabHotSeason>.col-4,.Recommendation>.col-4{
+    max-height: 276px;
+    max-width: 370px;
+    padding-right: 30px;
+}
+.TabHotSeason>.col-4 img,.Recommendation>.col-4 img{
+    border-radius: 5px;
+}
+.TabHotSeason>.col-4 a,.Recommendation>.col-4 a{
+    display: block;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 12px;
+    line-height: 28px;
+    color: #B5BDCA;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.TabHotSeason>.col-4 span,.Recommendation>.col-4 span{
+    border-bottom: 1px dashed rgba(181, 189, 202, 0.5)  ;
+}
+.TabHotSeason>.col-4 h3,.Recommendation>.col-4 h3{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #129FDF;
+    margin-top: 6px;
+}
 
-/*.TabHotSeason>.row>.col-4 a{*/
-/*    display: block;*/
-/*    padding-left: 15px;*/
-/*    margin-top: -9px;*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 16px;*/
-/*    line-height: 28px;*/
-/*    color: #B5BDCA;*/
-/*}*/
-/*.TabHotSeason>.row>.col-4 span{*/
-/*    font-style: normal;*/
-/*    font-weight: 500;*/
-/*    font-size: 22px;*/
-/*    line-height: 28px;*/
-/*    color: #129FDF;*/
-/*    padding-left: 15px;*/
-/*    margin-top: 7px;*/
-/*    display: block;*/
-/*}*/
+.Subscription{
+
+    height: 357px;
+    background: linear-gradient(to bottom, #002D64 0%, rgba(0, 45, 100, 0.4) 33.71%, rgba(0, 45, 100, 0) 53.5%),
+    linear-gradient(to top, #002D64 0%, rgba(0, 45, 100, 0.4) 17.65%, rgba(0, 45, 100, 0) 28.01%),
+    linear-gradient(to right, #002D64 0%, rgba(0, 45, 100, 0.4) 40.05%, rgba(0, 45, 100, 0) 63.56%),
+    url("../Img/Other/Subscription.png") no-repeat, no-repeat, no-repeat,no-repeat center, center, center,  center ;
+    /*opacity: 0.2;*/
+    border-radius: 5px 5px 0 0;
+}
+.Subscription>.row>.col-xl-6 h1{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 101px;
+    margin-bottom: 0;
+}
+.Subscription>.row>.col-xl-6 h3{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 9px;
+    margin-bottom: 25px;
+}
+
+.SubscriptionEmail input{
+    height: 66px;
+    border-radius: 5px;
+}
+.Subscription span{
+    position: absolute;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #B5BDCA;
+    padding-top: 12px;
+    padding-left: 20px;
+}
+.Subscription input{
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B5BDCA;
+
+    padding-left: 19px;
+    padding-top: 26px;
+}
 
 
 

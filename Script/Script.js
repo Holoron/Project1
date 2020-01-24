@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded',function(){
         slidesPerView: 4.43,
         spaceBetween: 2,
         freeMode: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
     });
     window.onclick = function (event) {
         for (var i = 0; i < 7; i++) {
