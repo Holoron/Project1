@@ -860,6 +860,15 @@ header {
 .contimg
 {
     margin-right: 18px;
+
+}
+.contimg>svg
+{
+    display: none;
+    border-radius: 180px;
+    background: white;
+    max-width: 30px;
+    max-height: 30px;
 }
 .underlined
 {
@@ -889,6 +898,10 @@ header {
     margin-bottom: 13px;
 }
 
+a:hover > svg {
+    fill:white;
+    background:#1C5BA8 ;
+}
 
 
 
