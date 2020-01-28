@@ -1,9 +1,29 @@
 document.addEventListener('DOMContentLoaded',function(){
-        var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4.43,
-        spaceBetween: 2,
-        freeMode: true,
-    });
+    //     var swiper = new Swiper('.TabSwiper>.swiper-container', {
+    //     slidesPerView: 4.43,
+    //     spaceBetween: 2,
+    //     freeMode: true,
+    // });
+//
+//     var swiper = new Swiper('.box_score_slider .swiper-container', {
+//         effect: 'coverflow',
+//         grabCursor: true,
+//         centeredSlides: true,
+//         slidesPerView: 'auto',
+//         loop:true,
+//         coverflowEffect: {
+//             rotate: 0,
+//             stretch: 247.12,
+//             depth: 70,
+//             modifier: 3,
+//             slideShadows : false,
+//         },
+//         navigation: {
+//             nextEl: '.box_score_slider .swiper-button-next',
+//             prevEl: '.box_score_slider .swiper-button-prev',
+//         },
+//     });
+// }
     window.onclick = function (event) {
         for (var i = 0; i < 7; i++) {
             for (var j = 0; j < 7; j++) {

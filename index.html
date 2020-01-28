@@ -16,7 +16,7 @@
 
         <div class="logo col-4">
             <div class="logoimage">
-                <img src="Img/Header/logo.png">
+                <img src="Img/Header/logo.png" alt="">
             </div>
             <div class="logotext">
                 <span class="logsam"> СамараТур 19 лет с вами!<br> Проверено временем </span>
@@ -25,7 +25,7 @@
 
         <div class="col-3 mainclock">
             <div class=" clock ">
-                <img src="Img/Header/Clock.svg">
+                <img src="Img/Header/Clock.svg" alt="">
             </div>
             <div>
                 <span class="clocktext">Пн-Пт 10:00-18:00</span>
@@ -34,19 +34,24 @@
         <div class="col-2 headinfo">
             <span class="samtc"> Самара ТЦ «Захар»:<br> <a class="tel" href="(846) 277-70-24"><b>(846) 277-70-24</b></a></span>
         </div>
-        <div class="col-2" style="padding-left: 0">
+        <div class="col-2 tol" >
             <span class="samtc">Тольятти:<br> <a class="tel" href="8-800-100-25-94"><b>8-800-100-25-94</b></a></span>
         </div>
         <div class="col-2 but">
-            <span class="Buttext">Подбор тура<img src="Img/Header/Wave.svg" class="butimg"></span>
+            <span class="Buttext">Подбор тура<img src="Img/Header/Wave.svg" alt="" class="butimg"></span>
         </div>
 
     </div>
-    <div class="container-fluid menu" style="min-height: 60px">
+    <div class="container-fluid menu">
 
         <div class="container search menu">
-            <div class="searchfield">
-                123
+            <div class="flexend">
+                <div class="searchfield">
+                    <input class="searchinput" placeholder="Начните что-нибудь вводить">
+                </div>
+                <div class="searchfield">
+                    <img src="Img/Header/Search.svg" id="searchsecond" alt="">
+                </div>
             </div>
         </div>
         <ul class="container flex  list">
@@ -77,7 +82,7 @@
             <li class="menuitem">
 
                 <ul class="menutext list">
-                    <li>Турбазы и санатории<img src="Img/Header/ArrowDown.svg" style="float: right;padding-top: 5%">
+                    <li>Турбазы и санатории<img class="arrdwn" src="Img/Header/ArrowDown.svg" alt=""><img class="arrup" src="Img/Header/ArrowUp.svg" alt="">
 
                         <ul class="submenu">
                             <li><a href="#">Верхний бор</a></li>
@@ -97,12 +102,12 @@
             </li>
             <li class="menuitem">
 
-                <span class="menutext"> Доп. услуги</span><img src="Img/Header/ArrowDown.svg" >
+                <span class="menutext"> Доп. услуги</span><img src="Img/Header/ArrowDown.svg"  alt="">
 
             </li>
             <li class="menuitem">
 
-                <img src="Img/Header/Search.svg" >
+                <img src="Img/Header/Search.svg"  alt="" id="search">
 
             </li>
         </ul>
@@ -110,35 +115,76 @@
 
 
     </div>
-    <div class="container row filter " style="margin:1% auto 0.5% auto; ">
-        <div class="col-2">
-            <span class="label"> Откуда</span>
-            <input class="inp" placeholder="Самара">
+    <div class="container  " >
+        <div class="flex filter" style="position:relative;z-index: 1">
+            <div >
+                <span class="label"> Откуда</span>
+                <input class="inp" placeholder="Самара">
+            </div>
+            <div >
+                <span class="label"> Куда</span>
+                <input class="inp" placeholder="Направление">
+            </div>
+            <div>
+                <span class="label"> Дата вылета</span>
+                <input class="inp" placeholder="30 ноября 2019">
+            </div>
+            <div >
+                <span class="label"> Ночей</span>
+                <input class="inp" placeholder="5-7 ночей">
+            </div>
+            <div >
+                <span class="label"> Туристы</span>
+                <input class="inp" placeholder="2-0-0">
+            </div>
+            <div class=" find" style="min-width: 14%">
+                <span>Найти</span>
+            </div>
         </div>
-        <div class="col-2">
-            <span class="label"> Куда</span>
-            <input class="inp" placeholder="Направление">
-        </div>
-        <div class="col-2">
-            <span class="label"> Дата вылета</span>
-            <input class="inp" placeholder="30 ноября 2019">
-        </div>
-        <div class="col-2">
-            <span class="label"> Ночей</span>
-            <input class="inp" placeholder="5-7 ночей">
-        </div>
-        <div class="col-2">
-            <span class="label"> Туристы</span>
-            <input class="inp" placeholder="2-0-0">
-        </div>
-        <div class="col-2 find" style="min-width: 30px">
-            <span>Найти</span>
-        </div>
-
     </div>
 
 </header>
 <main>
+    <!--Банеры-->
+        <!--<div class="container">-->
+            <!--<div class="PreviousBannerSwiper">-->
+
+            <!--</div>-->
+            <!--<div class="ThisBannerSwiper">-->
+
+            <!--</div>-->
+            <!--<div class="NextBannerSwiper">-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <div class="container BannerSwiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./Img/Banners/1.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./Img/Banners/2.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./Img/Banners/1.png)"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Swiper -->
+            <!--<div class="swiper-container">-->
+                <!--<div class="swiper-wrapper">-->
+                    <!--<div class="swiper-slide PreviousBannerSwiper">-->
+                        <!--<h2>Новогодние <br> и Рождественcкие туры</h2>-->
+                        <!--<h4>Говорят, как встретишь новый год, так его и проведешь. <br> Почему бы не встретить его хорошо? </h4>-->
+                    <!--</div>-->
+                    <!--<div class="swiper-slide ActiveBannerSwiper">-->
+                        <!--<h2>Новогодние <br> и Рождественcкие туры</h2>-->
+                        <!--<h4>Говорят, как встретишь новый год, так его и проведешь. <br> Почему бы не встретить его хорошо? </h4>-->
+                    <!--</div>-->
+                    <!--<div class="swiper-slide NextBannerSwiper">-->
+                        <!--<h2>Новогодние <br> и Рождественcкие туры</h2>-->
+                        <!--<h4>Говорят, как встретишь новый год, так его и проведешь. <br> Почему бы не встретить его хорошо? </h4>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            </div>
+        </div>
     <!--Наши туры-->
     <div class="OurTours">
         <div class="container">
@@ -307,7 +353,7 @@
                 <div class="col-4 offset-xl-1 TourMore">
                         <div class="row no-gutters TourButtonMore">
                             <div class="col "><span>Загрузить еще</span> </div>
-                            <div class="col-1"><img src="Img/Other/WaweMore.svg" alt=""> </div>
+                            <div class="col-1"><img src="Img/Other/WaveMore.svg" alt=""> </div>
                         </div>
                 </div>
             </div>
@@ -392,16 +438,115 @@
                 <div>
                     <h1>Подпишитесь на нашу рассылку</h1>
                     <h3>Наши подписчики первыми узнают о горячих турах!</h3>
-                    <div class="SubscriptionEmail">
-                        <span > Электронная почта</span>
-                        <input class="inp" placeholder="вашапочта@gmail.com">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <span > Электронная почта</span>
+                            <input class="inp" placeholder="вашапочта@gmail.com">
+                        </div>
+                        <div class="col SubscriptionButton">
+                            <div>
+                                <span>Подписаться</span>
+                                <img src="Img/Other/SendEmail.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 </main>
+<footer >
+    <div class="container-fluid footer">
+        <div class="container row" style="margin: auto">
+            <div class="col-4" style="padding: 0">
+                <h4 class="foottitle">Наши туры</h4>
+                <ul class="listtour">
+                    <li><a href="#">По России</a></li>
+                    <li><a href="#">Пляжные туры</a></li>
+                    <li><a href="#">Экскурсионные туры</a></li>
+                    <li><a href="#">Автобусные, ж/д и авиа туры</a></li>
+                    <li><a href="#">Автобусные, ж/д и авиа туры</a></li>
+                    <li><a href="#">Новый год и Рождество в России</a></li>
+                    <li><a href="#">Новый год и Рождество в Зарубежье</a></li>
+                    <li><a href="#">Круизы по Волге, Самаре</a></li>
+                    <li><a href="#">Горнолыжные туры</a></li>
+                </ul>
+                <h4 class="foottitle">Отдых на волге</h4>
+                <h4 class="foottitle">Турбазы и санатории</h4>
+                <h4 class="foottitle">Услуги для гостей Самары</h4>
+            </div>
+            <div class="col-4" style="padding: 0">
+                <h4 class="foottitle">Хиты сезона</h4>
+                <div class="row ulblock">
+                    <div class="col-5">
+                        <ul class="listtour" >
+                            <li><a href="#">Таиланд</a></li>
+                            <li><a href="#">Оаэ</a></li>
+                            <li><a href="#">Испания</a></li>
+                            <li><a href="#">Чехия</a></li>
+                            <li><a href="#">Израиль</a></li>
+                            <li><a href="#">Индия, Гоа</a></li>
+                            <li><a href="#">Маврикий</a></li>
+                            <li><a href="#">Сейшелы</a></li>
+                            <li><a href="#">Шри-Ланка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="listtour" >
+                            <li><a href="#">Италия</a></li>
+                            <li><a href="#">Великобритания</a></li>
+                            <li><a href="#">Германия</a></li>
+                            <li><a href="#">Франция</a></li>
+                            <li><a href="#">Европа из Самары</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <blockquote class="quote">
+                    Заявки, отправленные по факсу и электронной почте, принимаются круглосуточно и подтверждаются в течение 24 часов
+                </blockquote>
+            </div>
+            <div class="col-4" style="padding-right: 0">
+                <h4 class="titlecont" style="margin-bottom: 15px">Офис в Самаре</h4>
+                <ul class="adressmail">
+                    <li class="underlined">ТЦ ТД ЗАХАР М:"Российская", г. Самара, ул. Ново-Садовая 106, этаж 5, офис 500-А</li>
+                    <li class="underlined"><a href="office@samaratour.com">office@samaratour.com</a></li>
+                </ul>
+                <ul class="ulmobile">
+                    <li class="mobile">
+                        <div>Телефон/факс в Самаре</div>
+                        <a href="(846) 277-70-24">(846) 277-70-24,</a><a href="277-70-31"> 277-70-31</a>
+                    </li>
+                    <li class="mobile">
+                        <div>Мобильный</div>
+                        <a href="8-987-929-05-11">8-987-929-05-11,</a><a href="8-909-342-07-44"> 8-909-342-07-44, </a><a href="8-987-920-60-64"> 8-987-920-60-64</a>
+                    </li>
+                    <li class="mobile">
+                        <div>Для корпоративных клиентов и групп от 10 чел. </div>
+                        <a href="8-909-342-07-44">8-909-342-07-44</a>
+                    </li>
+                    <li class="mobile">
+                        <div>Телефон в Тольятти </div>
+                        <a href="8-800-100-25-94">8-800-100-25-94</a>
+                    </li>
+                </ul>
+                <div>
+                    <h4 class="titlecont" style="margin-bottom: 10px">Мы в соцсетях:</h4>
+                    <a href="https://vk.com/"><img src="Img/Footer/vk.svg" class="contimg"></a><a href="https://ru-ru.facebook.com/"><img src="Img/Footer/facebook.svg" class="contimg"></a><a href="https://ok.ru/"><img src="Img/Footer/odnokl.svg" class="contimg"></a><a href="https://twitter.com/?lang=ru"><img src="Img/Footer/twitter.svg" class="contimg"></a><a href="https://www.youtube.com/?gl=RU"><img src="Img/Footer/youtube.svg" class="contimg"></a><a href="https://www.instagram.com/?hl=ru"><img src="Img/Footer/insta.svg" class="contimg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  bottom" >
+        <div class="container row" style="margin: auto; padding: 22px 0 26px 0">
+            <div class="col-9" style="padding: 0">
+                <span class="org">Турфирма ООО "СамараТур" успешно работает с 2000 года. 19 лет на рынке туристических услуг. Проверено временем.</span>
+            </div>
+            <div class="col-3 org" style="text-align: right;padding: 0">
+                <span>© 2000-2019 Самара Тур</span>
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="Script/swiper.min.js"></script>
     <script src="Script/Script.js"></script>
 </body>
