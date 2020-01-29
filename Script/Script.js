@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded',function(){
-    //     var swiper = new Swiper('.TabSwiper>.swiper-container', {
-    //     slidesPerView: 4.43,
-    //     spaceBetween: 2,
-    //     freeMode: true,
-    // });
+        var swiper = new Swiper('.TabSwiper>.swiper-container', {
+        slidesPerView: 4.43,
+        spaceBetween: 2,
+        freeMode: true,
+    });
 //
 //     var swiper = new Swiper('.box_score_slider .swiper-container', {
 //         effect: 'coverflow',
@@ -40,3 +40,14 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 
 });
+
+
+function email() {
+    var r=/^\w+@\w+\.\w{2,4}$/i;
+    if(r.test(document.getElementById("").value))
+    {
+        document.getElementById("").style.outline="red";
+        document.getElementsByClassName("")[4].style.color="red";
+    }
+
+}

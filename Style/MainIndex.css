@@ -1,0 +1,355 @@
+.BannerSwiper{
+    text-align: -webkit-center;
+}
+.BannerSwiper>.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.BannerSwiper>.swiper-container>.swiper-wrapper{
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+}
+.BannerSwiper.swiper-container>.swiper-wrapper>.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+/*.PreviousBannerSwiper, .NextBannerSwiper{*/
+/*display: flex;*/
+/*height: 400px;*/
+/*width: 870px;*/
+/*border-radius: 5px;*/
+/*position: absolute;*/
+
+/*z-index: 1;*/
+/*}*/
+/*.PreviousBannerSwiper {*/
+/*background: linear-gradient(to left, #03499E 7.22%, rgba(3, 73, 158, 0.7) 48.39%, rgba(3, 73, 158, 0) 100%), url("../Img/Banners/2.png"),linear-gradient(#03499E 100%, #03499E 100%);*/
+/*background-repeat: no-repeat,no-repeat,no-repeat;*/
+/*background-position: left center, right,center;*/
+
+/*bottom: 10px;*/
+/*left: 0;*/
+/*}*/
+/*.NextBannerSwiper{*/
+/*background: linear-gradient(to right, #03499E 7.22%, rgba(3, 73, 158, 0.7) 48.39%, rgba(3, 73, 158, 0) 100%), url("../Img/Banners/2.png"),linear-gradient(#03499E 100%, #03499E 100%);*/
+/*background-repeat: no-repeat,no-repeat,no-repeat;*/
+/*background-position: left center, right,center;*/
+/*right: 0;*/
+/*bottom: 10px;*/
+/*}*/
+/*.PreviousBannerSwiper h2, .PreviousBannerSwiper h4{*/
+/*display: none;*/
+/*}*/
+
+.ActiveBannerSwiper{
+    display: block;
+    max-width: 970px;
+    height: 450px;
+    background: linear-gradient(90deg, #03499E 7.22%, rgba(3, 73, 158, 0.7) 48.39%, rgba(3, 73, 158, 0) 100%), url("../Img/Banners/1.png"),linear-gradient(#03499E 100%, #03499E 100%);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: left center, right,center;
+    border-radius: 5px;
+    text-align: start;
+    z-index: 2;
+}
+.ActiveBannerSwiper h2, .ActiveBannerSwiper h4{
+    display: block;
+    font-style: normal;
+    color: #FFFFFF;
+    margin-left: 70px;
+}
+.ActiveBannerSwiper h2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    margin-bottom: 0;
+
+}
+.ActiveBannerSwiper h4{
+    font-family: Rubik;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+
+}
+
+
+/*Title*/
+.HeadingTitlePost{
+    margin: 100px 0 50px 0;
+}
+.HeadingTitlePost span:nth-child(1){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #36424F;
+    display: block;
+    padding-bottom:10px;
+}
+.HeadingTitlePost span:nth-child(2){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #03499E;
+    display: block;
+}
+.HeadingTitleNavigation{
+    margin-bottom: 50px;
+    align-self: flex-end;
+    text-align-last: end;
+}
+.HeadingTitleNavigation img  {
+    padding-left: 35px;
+    padding-bottom: 7px;
+    margin-right: -1px;
+}
+
+/*Раздел Наши туры*/
+.OurTours{
+    width: 100%;
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+}
+
+/*Слайдер Наши туры*/
+.TabSwiper{
+    padding: 0 0 20px 0;
+}
+.TabSwiper>.swiper-container {
+    text-align: -webkit-center;
+    width: 100%;
+    height: 150px;
+}
+.TabSwiper>.swiper-container:after,
+.TabSwiper>.swiper-container:before,
+.TabHotSeasonShadow:before,
+.TabHotSeasonShadow:after,
+.Recommendation:before,
+.Recommendation:after{
+    content: "";
+    position: absolute;
+    height: 130px;
+    width: 195px;
+    z-index:100;
+}
+.TabSwiper>.swiper-container:before{
+    left: 0;
+    background-image: linear-gradient(to left, rgba(247, 247, 247, 0) 0%, #F7F7F7 100%);
+}
+.TabSwiper>.swiper-container:after{
+    z-index: 10;
+    top:0;
+    right: 0;.
+    background-image: linear-gradient(to right, rgba(247, 247, 247, 0) 0%, #F7F7F7 100%);
+
+}
+.TabSwiper>.swiper-container>.swiper-wrapper>.swiper-slide {
+    border-radius: 5px;
+    background: #fefefe ;
+    max-height: 130px;
+    max-width: 265px;
+    text-align: center;
+    font-size: 18px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    z-index:1;
+}
+.TabSwiper>.swiper-container>.swiper-wrapper>.swiper-slide h3,.swiper-slide span{
+    font-style: normal;
+    display: block;
+}
+.TabSwiper>.swiper-container>.swiper-wrapper>.swiper-slide h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #129FDF;
+    margin: 26px 0 6px 0;
+
+}
+.TabSwiper>.swiper-container>.swiper-wrapper>.swiper-slide span{
+    padding: 0 15px 0 15px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #36424F;
+}
+.TabSwiper>.swiper-container>.swiper-wrapper>.swiper-slide:hover{
+    box-shadow: 0px 5px 15px rgba(0, 5, 65, 0.1);
+    z-index: 22;
+}
+.TabSwiper>.swiper-container>.swiper-wrapper>.active{
+    background: #129FDF;
+    opacity: 0.99;
+    box-shadow: 0px 5px 15px rgba(0, 5, 65, 0.1);
+    border-radius: 5px;
+    z-index: 21;
+}
+.TabSwiper>.swiper-container>.swiper-wrapper>.swiper-slide.active h3,
+.TabSwiper>.swiper-container>.swiper-wrapper>.swiper-slide.active span  {
+    color: white;
+}
+
+/*Раздел с турами */
+.ViewOurTurs{
+    max-width: 370px;
+    width: 370px;
+    height: 270px;
+    -o-background-size: 10px;
+    background: linear-gradient(to top, #002D64 0%, rgba(0, 45, 100, 0) 50%), linear-gradient(to bottom, #002D64 0%, rgba(0, 45, 100, 0) 26%), url(../Img/TuorsImg/1.png) no-repeat, no-repeat, no-repeat center, center, center;
+    border-radius: 5px;
+    margin: 0 15px 30px 15px ;
+    padding: 0;
+}
+.ViewOurTurs img{
+    padding-left: 30px;
+}
+.ViewOurTurs span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 6px;
+    position: absolute;
+    padding-top: 19px;
+    color: #FFFFFF;
+}
+.ViewOurTurs h3, .ViewOurTurs h4{
+    font-family: Rubik;
+    font-style: normal;
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+.ViewOurTurs h3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 126px;
+    margin-bottom: 1px;
+}
+.ViewOurTurs h4{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.OurBottom h3{
+    font-family: Rubik;
+    height: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #36424F;
+    padding-top:8px;
+}
+.OurBottom span{
+    color: #129fdf;
+}
+.OurButtom {
+    width: 185px;
+    height: 47px;
+    background: #129FDF;
+}
+.TourMore{
+    text-align: center;
+    padding-top: 10px;
+}
+.TourButtonMore{
+    height: 47px;
+    cursor: pointer;
+    background: #129FDF;
+    border-radius: 5px;
+    margin-left: 93px;
+    margin-right: 92px;
+}
+.TourButtonMore > .col{
+    max-width: 120px;
+    padding-top: 13px;
+    margin-left: 19px;
+}
+.TourButtonMore > .col-1{
+    padding-top: 17px;
+}
+.TourButtonMore span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/*HotSeason*/
+.TabHotSeason{
+    padding-bottom: 29px;
+}
+.Recommendation{
+    padding-bottom: 99px;
+}
+.TabHotSeasonShadow:before,.Recommendation:before{
+    left: 0;
+    height: 305px;
+    background-image: linear-gradient(to left, rgba(247, 247, 247, 0) 0%, #FFFFFF 100%);
+
+}
+.TabHotSeasonShadow:after,.Recommendation:after{
+    right: 0;
+    height: 305px;
+    background-image: linear-gradient(to right, rgba(247, 247, 247, 0) 0%, #FFFFFF 100%);
+    transform: translateY(-305px);
+}
+
+.TabHotSeason>.col-4:last-child,.Recommendation>.col-4:last-child{
+    padding-right: 0;
+}
+.TabHotSeason>.col-4,.Recommendation>.col-4{
+    max-height: 276px;
+    max-width: 370px;
+    padding-right: 30px;
+}
+.TabHotSeason>.col-4 img,.Recommendation>.col-4 img{
+    border-radius: 5px;
+}
+.TabHotSeason>.col-4 a,.Recommendation>.col-4 a{
+    display: block;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 12px;
+    line-height: 28px;
+    color: #B5BDCA;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.TabHotSeason>.col-4 span,.Recommendation>.col-4 span{
+    border-bottom: 1px dashed rgba(181, 189, 202, 0.5)  ;
+}
+.TabHotSeason>.col-4 h3,.Recommendation>.col-4 h3{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #129FDF;
+    margin-top: 6px;
+}
+

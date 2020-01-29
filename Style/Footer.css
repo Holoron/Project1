@@ -1,0 +1,254 @@
+
+.Subscription{
+
+    height: 357px;
+    background: linear-gradient(to bottom, #002D64 0%, rgba(0, 45, 100, 0.4) 33.71%, rgba(0, 45, 100, 0) 53.5%),
+    linear-gradient(to top, #002D64 0%, rgba(0, 45, 100, 0.4) 17.65%, rgba(0, 45, 100, 0) 28.01%),
+    linear-gradient(to right, #002D64 0%, rgba(0, 45, 100, 0.4) 40.05%, rgba(0, 45, 100, 0) 63.56%),
+    url("../Img/Footer/SubImage.png") no-repeat, no-repeat, no-repeat,no-repeat center, center, center,  center ;
+    /*opacity: 0.2;*/
+    border-radius: 5px 5px 0 0;
+    background-size: 100%;
+}
+.Subscription>div
+{
+    margin: auto;
+}
+.Subscription h1{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 101px;
+    margin-bottom: 0;
+}
+.Subscription h3{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 9px;
+    margin-bottom: 25px;
+}
+
+.Subscription span{
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #B5BDCA;
+    padding-top: 12px;
+    padding-left: 20px;
+}
+
+.Subscription input, .SubscriptionButton div{
+    height: 66px;
+}
+
+
+.Subscription input{
+    width: 330px;
+
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B5BDCA;
+    border-radius: 5px 0 0 5px;
+    padding-left: 19px;
+    padding-top: 26px;
+}
+.Subscription input::placeholder{
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+
+    /* Серый */
+
+    color: #B5BDCA;
+}
+
+.Subscription input:focus::placeholder,.Subscription input:focus, .Subscription input:focus .label{
+    color: #36424F;
+}
+.SubscriptionButton div{
+    width: 200px;
+    background: #FFDA50;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+
+}
+.SubscriptionButton span{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+
+    color: #36424F;
+
+    display: inline-block;
+    position: relative;
+    padding-top: 19px;
+    padding-left: 28px;
+}
+.Subscription img{
+    margin-top: 25px;
+    position: absolute;
+    padding-left: 11px;
+}
+
+/*Подвал*/
+.footer {
+    background: #03499E;
+    padding-bottom: 41px;
+    padding-top: 81px;
+}
+.footer a:active,.footer a:visited,.footer a
+{
+    color: white;
+}
+
+
+
+.foottitle {
+    padding-left: 0;
+    margin-bottom: 30px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.bottom {
+    background: #1052A3;
+}
+
+.org {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B5BDCA;
+}
+
+.listtour {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.listtour > li {
+    margin-bottom: 20px;
+}
+
+.listtour > li > a:hover {
+    text-decoration: underline;
+}
+
+.ulblock {
+    height: 340px;
+    margin-bottom: 75px;
+}
+
+.quote {
+    padding-left: 18px;
+    margin-left: 0px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    border-left: 4px solid #356DB1;
+    color: #B4C9E2;
+}
+
+.titlecont {
+    padding-left: 0;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.contimg {
+    margin-right: 18px;
+
+}
+
+.contimg > svg {
+    fill: #03499E;
+    border: 5px solid white;
+    border-radius: 180px;
+    border-spacing: 10px;
+    background: white;
+    width: 100%;
+    max-height: 30px;
+
+}
+
+.underlined {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.social
+{
+    display: flex;
+    width: 100%;
+}
+.social>li>a
+{
+    display: flex;
+    width: 30px;
+}
+
+.mobile {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.ulmobile > li {
+    margin-bottom: 26px;
+}
+
+.adressmail > li {
+    margin-bottom: 13px;
+}
+
+a:hover > svg {
+    fill: white;
+    background: #1C5BA8;
+    border: 5px solid #1C5BA8;
+}
+
