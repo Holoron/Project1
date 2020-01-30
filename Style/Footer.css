@@ -1,4 +1,5 @@
 
+/*Блок подписаться*/
 .Subscription{
 
     height: 357px;
@@ -13,6 +14,10 @@
 .Subscription>div
 {
     margin: auto;
+}
+.Subscription>div>div
+{
+    padding-left: 0
 }
 .Subscription h1{
     font-family: Rubik;
@@ -55,11 +60,11 @@
     width: 330px;
 
     font-family: Rubik;
-    font-style: italic;
+    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 28px;
-    color: #B5BDCA;
+    color: #36424F;
     border-radius: 5px 0 0 5px;
     padding-left: 19px;
     padding-top: 26px;
@@ -78,9 +83,11 @@
     color: #B5BDCA;
 }
 
-.Subscription input:focus::placeholder,.Subscription input:focus, .Subscription input:focus .label{
+.Subscription input:focus::placeholder {
+    font-style: normal;
     color: #36424F;
 }
+
 .SubscriptionButton div{
     width: 200px;
     background: #FFDA50;
@@ -110,19 +117,30 @@
     padding-left: 11px;
 }
 
-/*Подвал*/
+/*верхняя часть футера*/
 .footer {
     background: #03499E;
     padding-bottom: 41px;
     padding-top: 81px;
 }
+.footer>div:first-child
+{
+    margin: auto;
+}
+/*.footer>div>div*/
+/*{*/
+/*padding: 0;*/
+/*}*/
 .footer a:active,.footer a:visited,.footer a
 {
     color: white;
 }
 
-
-
+.pad
+{
+    padding: 0;
+}
+/*Загаловок футера*/
 .foottitle {
     padding-left: 0;
     margin-bottom: 30px;
@@ -134,11 +152,25 @@
     color: #FFFFFF;
     opacity: 0.8;
 }
-
+/*Нижняя часть футера*/
 .bottom {
     background: #1052A3;
-}
 
+}
+.bottom>div
+{
+    margin: auto;
+    padding: 22px 0 26px 0;
+}
+.bottom>div>div:first-child
+{
+    padding: 0;
+}
+.bottom>div>div:last-child
+{
+    text-align: right;
+    padding: 0;
+}
 .org {
     font-family: Rubik;
     font-style: normal;
@@ -147,7 +179,7 @@
     line-height: 22px;
     color: #B5BDCA;
 }
-
+/*Список футера*/
 .listtour {
     font-family: Rubik;
     font-style: normal;
@@ -191,6 +223,22 @@
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
+    margin-bottom: 10px
+}
+.inp>span
+{
+    width: 100%;
+    padding: 0;
+    top: 12px;
+    left: 20px;
+}
+#divoffice
+{
+    padding-right: 0;
+}
+#office
+{
+    margin-bottom: 15px;
 }
 
 .contimg {

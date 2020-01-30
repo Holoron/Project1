@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="Style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="Style/swiper.min.css">
-    <link rel="stylesheet" href="Style/Header.css">
-    <link rel="stylesheet" href="Style/MainIndex.css">
-    <link rel="stylesheet" href="Style/Footer.css">
+    <!--<link rel="stylesheet" href="Style/Header.css">-->
+    <!--<link rel="stylesheet" href="Style/MainIndex.css">-->
+    <!--<link rel="stylesheet" href="Style/Footer.css">-->
     <link rel="stylesheet" href="Style/Style.css">
     <link rel="stylesheet" href="Style/Custom.css">
 
@@ -119,7 +119,7 @@
 
     </div>
     <div class="container  " >
-        <div class="flex filter" style="position:relative;z-index: 1">
+        <div class="flex filter" >
             <div >
                 <span class="label"> Откуда</span>
                 <input class="inp" placeholder="Самара">
@@ -140,7 +140,7 @@
                 <span class="label"> Туристы</span>
                 <input class="inp" placeholder="2-0-0">
             </div>
-            <div class=" find" style="min-width: 14%">
+            <div class=" find" id="find" onclick="find();" >
                 <span>Найти</span>
             </div>
         </div>
@@ -149,6 +149,10 @@
 </header>
 <main>
     <!--Банеры-->
+
+    <div style="height: 450px;background: #002D64;margin-bottom: 100px">
+
+    </div>
         <!--<div class="container">-->
             <!--<div class="PreviousBannerSwiper">-->
 
@@ -186,8 +190,8 @@
                     <!--</div>-->
                 <!--</div>-->
             <!--</div>-->
-            </div>
-        </div>
+            <!--</div>-->
+        <!--</div>-->
     <!--Наши туры-->
     <div class="OurTours">
         <div class="container">
@@ -258,7 +262,7 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-                        <h3>Туры на остров Занзибар</h3>
+                        <a>Туры в Доминикану</a>
                         <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
@@ -268,7 +272,7 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-                        <h3>Туры на остров Занзибар</h3>
+                        <a>Туры на остров Занзибар</a>
                         <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
@@ -278,39 +282,7 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-                        <h3>Туры на остров Занзибар</h3>
-                        <h4>от 20 000 ₽</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col ViewOurTurs">
-                    <div>
-                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
-                        <span>Экономия 15-40% </span>
-                    </div>
-                    <div>
-                        <h3>Туры на остров Занзибар</h3>
-                        <h4>от 20 000 ₽</h4>
-                    </div>
-                </div>
-                <div class="col ViewOurTurs">
-                    <div>
-                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
-                        <span>Экономия 15-40% </span>
-                    </div>
-                    <div>
-                        <h3>Туры на остров Занзибар</h3>
-                        <h4>от 20 000 ₽</h4>
-                    </div>
-                </div>
-                <div class="col ViewOurTurs">
-                    <div>
-                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
-                        <span>Экономия 15-40% </span>
-                    </div>
-                    <div>
-                        <h3>Туры на остров Занзибар</h3>
+                        <a>Туры на остров Занзибар</a>
                         <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
@@ -322,7 +294,7 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-                        <h3>Туры на остров Занзибар</h3>
+                        <a>Туры на остров Занзибар</a>
                         <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
@@ -332,7 +304,7 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-                        <h3>Туры на остров Занзибар</h3>
+                        <a>Туры на остров Занзибар</a>
                         <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
@@ -342,7 +314,39 @@
                         <span>Экономия 15-40% </span>
                     </div>
                     <div>
-                        <h3>Туры на остров Занзибар</h3>
+                        <a>Туры на остров Занзибар</a>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <a>Туры на остров Занзибар</a>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <a>Туры на остров Занзибар</a>
+                        <h4>от 20 000 ₽</h4>
+                    </div>
+                </div>
+                <div class="col ViewOurTurs">
+                    <div>
+                        <img src="Img/TuorsImg/StartFaworite.png" alt="">
+                        <span>Экономия 15-40% </span>
+                    </div>
+                    <div>
+                        <a>Туры на остров Занзибар</a>
                         <h4>от 20 000 ₽</h4>
                     </div>
                 </div>
@@ -354,10 +358,10 @@
                     <h3><span>9 из 12 </span> предложений</h3>
                 </div>
                 <div class="col-4 offset-xl-1 TourMore">
-                        <div class="row no-gutters TourButtonMore">
-                            <div class="col "><span>Загрузить еще</span> </div>
-                            <div class="col-1"><img src="Img/Other/WaveMore.svg" alt=""> </div>
-                        </div>
+                    <div class="row no-gutters TourButtonMore">
+                        <div class="col "><span>Загрузить еще</span> </div>
+                        <div class="col-1"><img src="Img/Other/WaveMore.svg" alt=""> </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -433,7 +437,7 @@
                 </div>
         </div>
     </div>
-
+</main>
 <!--Подвал-->
 <footer>
     <section class="container-fluid Subscription">

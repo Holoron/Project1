@@ -1,3 +1,15 @@
+@media (min-width: 768px)
+{
+    .container {
+        max-width: 738px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
@@ -8,9 +20,8 @@
         padding-left: 0;
         padding-right: 0;
     }
-
-
 }
+
 .swiper-wrapper {
     max-width: 1170px;
     width: 100%;
